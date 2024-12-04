@@ -1,0 +1,47 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    z-index: 1000; 
+}
+
+/* Navigation links container */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 15px;
+    margin: 0;
+    flex-grow: 1; 
+}
+
+/* Style each link */
+.nav-links li {
+    display: inline;
+}
+
+/* Styling for the links */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Hover effect for the links */
+.nav-links a:hover {
+    color: #A64D79;
+}
+
+.nav-links li:first-child {
+    font-weight: bold; 
+    font-size: large;
+}
+

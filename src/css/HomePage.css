@@ -1,0 +1,143 @@
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1D; 
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Container for the content */
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%; 
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  /* Header Styling */
+  .home-header {
+    background-color: #3B1C32; 
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    width: 100%; 
+    max-width: 1200px; 
+    text-align: center;
+  }
+  
+  .home-header h1 {
+    color:#A64D79;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .home-header p {
+    color:#A64D79;
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+  }
+  
+  /* Popular Pokémon section */
+  .popular-pokemon {
+    margin: 20px 0;
+  }
+  
+  .popular-pokemon h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Flexbox for Pokémon list */
+  .pokemon-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    animation: scroll-pokemon 20s linear infinite;
+    overflow: hidden;
+  }
+  
+  .pokemon-item {
+    text-align: center;
+    width: 150px;
+    margin-right: 10px; 
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .pokemon-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .pokemon-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Explore More section */
+  .explore {
+    margin-top: 40px;
+  }
+  
+  .explore h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #A64D79; 
+    font-weight: bold;
+    font-size: larger;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #6A1E55; 
+  }
+  
+  /* Footer styling */
+  .credit {
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    margin-left: 40%;
+    z-index: 10;
+    font-size: 0.8rem;
+    color: #A64D79;
+  }
+  
+  /* Keyframes to scroll the images horizontally */
+  @keyframes scroll-pokemon {
+    0% {
+      transform: translateX(100%); /* Start just off the right side of the screen */
+    }
+    100% {
+      transform: translateX(-100%); /* End just off the left side of the screen */
+    }
+  }

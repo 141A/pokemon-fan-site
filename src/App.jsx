@@ -1,7 +1,11 @@
+// src/components/HomePage.js (or App.js)
 import React from 'react';
+import { auth } from './Firebase.js'; // Import Firebase auth
 import './css/HomePage.css';
 
 function App() {
+  const user = auth.currentUser; // Get the current authenticated user
+
   const popularPokemons = [
     { name: 'Pikachu', image: '/images/Pikachu.png' },
     { name: 'Charizard', image: '/images/Charizard.png' },
@@ -14,6 +18,13 @@ function App() {
       <header className="home-header">
         <h1>Welcome to the Pokémon Fan App!</h1>
         <p>Explore your favorite Pokémon and more.</p>
+        
+        {/* Welcome message at the top-right corner */}
+        {user && (
+          <div className="welcome-message">
+            Welcome, {user.email}
+          </div>
+        )}
       </header>
 
       <section className="popular-pokemon">
@@ -32,11 +43,11 @@ function App() {
         <h2>Explore More</h2>
         <p>Check out other sections of the app:</p>
         <ul className="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/PlayStylesPage">Ways to play the games</a></li>
-            <li><a href="/Tool">Pokemon Search</a></li>
-            <li><a href="/Random">Pokemon Randomizer</a></li>
-            <li><a href="/Login">Login Page</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/PlayStylesPage">Ways to play the games</a></li>
+          <li><a href="/Tool">Pokemon Search</a></li>
+          <li><a href="/Random">Pokemon Randomizer</a></li>
+          <li><a href="/Login">Login Page</a></li>
         </ul>
       </section>
     </div>

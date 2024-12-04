@@ -1,27 +1,15 @@
-import React, { useState } from 'react';
-import LoginForm from '../components/LoginForm';
-import RegistrationForm from '../components/RegisterForm';
+// src/App.js
+import React from 'react';
+import LoginRegister from '../components/LoginRegister';
+import '../css/styles.css'; // Optional: import your CSS for styling
 
-const LoginPage = () => {
-  const [isRegistering, setIsRegistering] = useState(false);
-
-  const toggleForm = () => {
-    setIsRegistering((prev) => !prev);
-  };
-
+function LoginPage() {
   return (
-    <div className="login-page">
-      <h1>{isRegistering ? 'Register' : 'Login'}</h1>
-      {isRegistering ? (
-        <RegistrationForm />
-      ) : (
-        <LoginForm />
-      )}
-      <button onClick={toggleForm}>
-        {isRegistering ? 'Already have an account? Login' : "Don't have an account? Register"}
-      </button>
+    <div className="App">
+      <h1>Welcome to Firebase Authentication</h1>
+      <LoginRegister />
     </div>
   );
-};
+}
 
 export default LoginPage;

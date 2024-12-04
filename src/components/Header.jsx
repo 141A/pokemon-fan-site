@@ -10,6 +10,7 @@ function Header() {
             <li><a href="/PlayStylesPage">Ways to play the games</a></li>
             <li><a href="/Tool">Pokemon Search</a></li>
             <li><a href="/Random">Pokemon Randomizer</a></li>
+            <li><a href="/Login">Login Page</a></li>
         </ul>
       </nav>
     </header>

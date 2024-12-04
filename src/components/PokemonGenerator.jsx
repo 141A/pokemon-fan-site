@@ -1,3 +1,15 @@
+/**
+ * Author: Anthony Lei
+ * 
+ * The purpose of this components is to generate a random pokemon at the click of a button
+ * using a randomId to generate a random number from 1-1025 then using the PokeAPI to search
+ * and find said pokemon using the idea as its pokedex entry number and then displaying
+ * it's in game sprite and its ID.
+ * 
+ * Worked on 11/30/24 - 12/2/24
+ * 
+ * */
+
 import React, { useState } from 'react';
 
 const PokemonGenerator = () => {

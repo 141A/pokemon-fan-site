@@ -1,11 +1,22 @@
+/** 
+ *  Author: Anthony Lei
+ * 
+ *  Worked on: 12/1/24 - 12/1/24
+ * 
+ *  This page used to teach the user the
+ *  different ways that they could play
+ *  the pokemon games.
+ * 
+*/
+
 import React from 'react';
-import Header from '../components/Header.jsx';
+import NavBar from '../components/NavBar.jsx';
 import '../css/styles.css'
 
 const PlaystylesPage = () => {
   return (
     <div>
-      <Header />
+      <NavBar />
       <div className="playstyles">
         <h1>Ways to Play Pokémon</h1>
         

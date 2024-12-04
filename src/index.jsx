@@ -1,3 +1,11 @@
+/** 
+ *  Author: Anthony Lei
+ * 
+ *  Worked on: 12/1/24 - 12/4/24
+ * 
+ *  This creates and handles the router paths
+ * 
+*/
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';

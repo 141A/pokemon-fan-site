@@ -1,10 +1,20 @@
-// src/components/HomePage.js (or App.js)
+/** 
+ *  Author: Anthony Lei
+ * 
+ *  Worked on: 11/24/24 - 12/4/24
+ * 
+ *  The main page of the project, it is also the home page.
+ *  This page shows some popular pokemon with a scrolling animation
+ *  Also allows for easy access to all of the pages.
+ * 
+*/ 
+
 import React from 'react';
-import { auth } from './Firebase.js'; // Import Firebase auth
+import { auth } from './Firebase.js';
 import './css/HomePage.css';
 
 function App() {
-  const user = auth.currentUser; // Get the current authenticated user
+  const user = auth.currentUser; 
 
   const popularPokemons = [
     { name: 'Pikachu', image: '/images/Pikachu.png' },

@@ -1,9 +1,17 @@
-import React from 'react';
-import '../css/Header.css'; 
+/**
+ * Author: Anthony Lei
+ * 
+ * This component is a navbar that holds all the paths to other pages.
+ * Worked on 11/24/24 - 11/24/24
+ * 
+ * */
 
-function Header() {
+import React from 'react';
+import '../css/NavBar.css'; 
+
+function NavBar() {
   return (
-    <header className="header">
+    <header className="NavBar">
       <nav>
         <ul className="nav-links">
           <li><a href="/">Home</a></li>
@@ -17,4 +25,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default NavBar;

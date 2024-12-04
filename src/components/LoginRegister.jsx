@@ -1,3 +1,12 @@
+/**
+ * Author: Anthony Lei
+ * 
+ * Created Login page using Firebase authentication to check and hold login details
+ * Worked on 12/3/24 - 12/4/24
+ * 
+ * */
+
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from '../Firebase.js';

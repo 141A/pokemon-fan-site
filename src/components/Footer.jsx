@@ -1,3 +1,10 @@
+/**
+ * Author: Anthony Lei
+ * 
+ * Footer component to credit the API that was used for the page.
+ * Worked on 11/24/24 - 12/4/24
+ * 
+ * */
 import React from 'react';
 
 function Footer() {

@@ -1,4 +1,11 @@
-.header {
+  /*
+    Name: Anthony Lei
+    Worked on: 11/25/24 - 12/4/24
+    This is the css style for the navBar component.
+    The NavBar component is used in three pages.    
+  */
+
+.NavBar {
     background-color: #333;
     color: white;
     padding: 20px;

@@ -1,4 +1,14 @@
-// src/SearchForm.js
+/**
+ * Author: Anthony Lei
+ * 
+ * This component uses the same PokeAPI found in the Pokemon Generator Component
+ * and uses the pokemon's name to search the API to find its Abilities, 
+ * Height, weight and displays its in game sprite
+ * 
+ * Worked on 11/28/24 - 12/1/24
+ * 
+ * */
+
 import React, { useState } from 'react';
 
 function SearchForm() {

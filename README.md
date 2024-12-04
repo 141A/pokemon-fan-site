@@ -1,5 +1,5 @@
-This is a React project for my web Dev class
+This is a React project for my web Dev class<br />
 
-Before running code make sure to:
-n\ npm install
-/n npm start
+Before running code make sure to:<br />
+npm install<br />
+npm start<br />
